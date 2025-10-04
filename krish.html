@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishh 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #c5aefc, #e0d4ff);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      color: #7d4bb1; /* light purple tone */
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #c5aefc; }
+      to { text-shadow: 0 0 12px #e0d4ff; }
+    }
+
+    .section {
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-family: 'Dancing Script', cursive;
+      color: #6b3f92;
+    }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center all rows */
+  gap: 100px; /* space between images */
+  padding: 20px;
+}
+
+.gallery img {
+  width: 280px;   /* fixed width */
+  height: 450px;  /* fixed height */
+  object-fit: cover; /* ensures the image fills without distortion */
+  border-radius: 16px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+    }
+
+    .section.krishnendu {
+      background: linear-gradient(135deg, #cfbbfd, #e0d4ff);
+    }
+
+    .section.cute-section {
+      background: linear-gradient(135deg, #cc75db, #f1e9bc);
+    }
+
+    .message {
+      font-size: 1.3rem;
+      margin-top: 20px;
+      animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #7d4bb1;
+      display: inline-block;
+      color: #6b3f92;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #7d4bb1; }
+    }
+
+    footer {
+      background: linear-gradient(135deg, #e0d4ff, #ffe6f1);
+      padding: 20px;
+      font-size: 1rem;
+      border-radius: 20px 20px 0 0;
+      color: #732d4f;
+    }
+
+   /* Dancing emojis/falling GIFs */
+.falling-dance {
+  position: absolute;
+  top: -50px;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  pointer-events: none; /* allow clicks through emojis */
+}
+
+/* Animation for falling */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.dance-section {
+  position: relative; /* container for falling elements */
+  overflow: hidden;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>Krishh :>> 💖</header>
+
+  <!-- Images Section -->
+  <div class="section krishnendu">
+    <h2>✨ prettyyy ✨</h2>
+    <div class="gallery">
+      <img src="pics/img6.jpeg" alt="Krishnendu 1">
+      <img src="pics/img7.jpeg" alt="Krishnendu 2">
+      <img src="pics/img8.jpeg" alt="Krishnendu 3">
+      <img src="pics/img9.jpeg" alt="Krishnendu 4">
+      <img src="pics/img10.jpeg" alt="Krishnendu 5">
+      <img src="pics/img11.jpg" alt="Krishnendu 6">
+    </div>
+    <p class="message">Everything feels so easy with you, Krishnendu ❤️ :\))))) </p>
+  </div>
+
+  <!-- Cute Images Section -->
+  <div class="section cute-section">
+    <h2>🌸cuteee🌸</h2>
+    <div class="gallery">
+      <img src="pics/img1.jpeg" alt="Cute 1">
+      <img src="pics/img2.jpeg" alt="Cute 2">
+      <img src="pics/img3.jpeg" alt="Cute 3">
+      <img src="pics/img4.jpeg" alt="Cute 4">
+      <img src="pics/img5.jpeg" alt="Cute 5">
+      <img src="pics/img12.jpeg" alt="Cute 6">
+    </div>
+  </div>
+
+    <!-- Dance Section -->
+    <div class="section dance-section">
+    <h2>💃 To the prettiesttt dancer.. 💃</h2>
+    <p class="dance-quote">“I know you like dance”</p>
+
+    <!-- Falling emojis/GIFs -->
+    <span class="falling-dance" style="left: 10%;">💃</span>
+    <span class="falling-dance" style="left: 30%; animation-duration: 6s;">🕺</span>
+    <span class="falling-dance" style="left: 50%; animation-duration: 5s;">💃</span>
+    <span class="falling-dance" style="left: 70%; animation-duration: 7s;">🕺</span>
+    <span class="falling-dance" style="left: 90%; animation-duration: 6s;">💃</span>
+    </div>
+
+  <footer>
+    I love you.. Krishnendu 🌹
+  </footer>
+
+</body>
+</html>
